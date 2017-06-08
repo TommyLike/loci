@@ -32,8 +32,8 @@ cp $(dirname $0)/{clone_project.sh,pip_install.sh,fetch_wheels.py} /opt/loci/
 # available in packaged form.
 virtualenv --system-site-packages /var/lib/openstack/
 source /var/lib/openstack/bin/activate
-pip install -U pip
-pip install -U setuptools wheel
+pip install -U pip -v
+pip install -U setuptools wheel -v
 
 $(dirname $0)/clone_project.sh
 
