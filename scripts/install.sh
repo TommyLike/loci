@@ -9,11 +9,13 @@ case ${distro} in
         apt-get install -y --no-install-recommends \
             ca-certificates \
             python \
+            netbase \
             virtualenv \
             sudo
         ;;
     centos)
         yum install -y \
+            netbase
             python-virtualenv \
             sudo
         ;;
